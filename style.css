@@ -7,64 +7,115 @@
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: 'Manrope', sans-serif; font-family: 'Poppins', sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
-p{
+p {
     color: rgb(85, 85, 85);
 }
-a, .btn{
+
+/* TRANSITION */
+
+a,
+.btn {
     transition: all 300ms ease;
 }
-header{
 
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
     display: flex;
+}
+
+nav {
     justify-content: space-around;
     align-items: center;
-
     height: 17vh;
-    
-    
 }
-nav{
-    display: inline-flex;
-    gap:2rem;
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
     font-size: 1.5rem;
-    font-weight: 500;
 }
-a{
-    text-decoration: none;
+
+a {
     color: black;
+    text-decoration: none;
     text-decoration-color: white;
 }
-a:hover{
-    color: gray;
+
+a:hover {
+    color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
-
+    text-decoration-color: rgb(181, 181, 181);
 }
-.logo{
+
+.logo {
     font-size: 2rem;
+}
+
+.logo:hover {
     cursor: default;
 }
 
+/* HAMBURGER MENU */
 
-#hamburger-nav{
+#hamburger-nav {
     display: none;
 }
-.menu{
+
+.hamburger-menu {
     position: relative;
     display: inline-block;
 }
-.hamburger-icon{
+
+.hamburger-icon {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     height: 24px;
     width: 30px;
     cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+
+
+.menu-links.open {
+    max-height: 300px;
 }

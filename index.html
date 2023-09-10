@@ -8,34 +8,35 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <!--header-->
-    <header>
-        <div class="logo">CRAWLER || WEB</div>
-        <nav id="desktop">
-            <a href="#">About</a>
-            <a href="#">Experience</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+    <!--header elements-->
+   <nav id="desktop-nav">
+      <div class="logo">John Doe</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <!--mobile links-->
+    <!--mobile phone menu-->
     <nav id="hamburger-nav">
-        <div class="logo">CRAWLER || WEB</div>
-        <div class="menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-       
-        <!--menu links-->
         <div class="menu-links">
-            <a href="#" onclick="toggleMenu()">About</a>
-            <a href="#" onclick="toggleMenu()">Experience</a>
-            <a href="#" onclick="toggleMenu()">Projects</a>
-            <a href="#" onclick="toggleMenu()">Contact</a>
+          <a href="#about" onclick="toggleMenu()">About</a>
+          <a href="#experience" onclick="toggleMenu()">Experience</a>
+          <a href="#projects" onclick="toggleMenu()">Projects</a>
+          <a href="#contact" onclick="toggleMenu()">Contact</a>
         </div>
+      </div>
     </nav>
    
 
