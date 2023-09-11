@@ -69,8 +69,9 @@
         margin-bottom: 0;
     }
     .profile-pic{
-        height: 400px;
-        width: 400px;
+        justify-content: center;
+        height: 370px;
+        width: 370px;
     }
 
     article {
@@ -113,17 +114,17 @@
     }
     .section_text{
         display: block;
-        gap:2rem;
+        gap:1rem;
 
     }
 
     .section_pic-container {
         width: auto;
-        height: 42vh;
+        height: 50vw;
         justify-content: center;
     }
     .section_text-01{
-        margin-top: 1rem;
+        margin-top: rem;
         margin-bottom:  1rem;
     }
 
