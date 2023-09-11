@@ -265,3 +265,21 @@ section{
     right: 5rem;
     bottom: 2.5rem;
 }
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background-color: white;
+    border-radius: 2rem;
+    border:#445666  0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+.section-container{
+    gap:4rem;
+    height: 80vh;
+}
+.section_pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
